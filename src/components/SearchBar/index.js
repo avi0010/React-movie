@@ -5,7 +5,7 @@ import {Wrapper, Content} from "./searchBarStyles";
 const SearchBar = ({searchTerm}) => {
     const [state, setState] = useState("")
 
-    useEffect(()=>{
+    useEffect(() => {
         const timer = setTimeout(() => {
             searchTerm(state)
         }, 500)
@@ -14,7 +14,7 @@ const SearchBar = ({searchTerm}) => {
     return (
         <Wrapper>
             <Content>
-                <img src={searchIcon} alt="search-svg" />
+                <img src={searchIcon} alt="search-svg"/>
                 <input
                     type="text"
                     placeholder="Search Movie"

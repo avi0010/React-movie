@@ -24,6 +24,17 @@ export const Content = styled.div`
   }
   input{
     position: absolute;
-    left: 20px;
+    left: 40px;
+    width: 95%;
+    top: 5px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    :focus{
+      outline: none;
+    }
   }
 `;

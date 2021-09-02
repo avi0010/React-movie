@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
     background-image: url(${({image}) => image});
-    background-size: 100% contain;
+    background-size: cover;
     background-position: center;
     height: 650px;
     position: relative;

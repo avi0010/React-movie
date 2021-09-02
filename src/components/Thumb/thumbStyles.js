@@ -7,7 +7,7 @@ export const Img = styled.img`
   object-fit: cover;
   border-radius: 20px;
   :hover{
-    opacity: 0.9;
-    transform: scale(1.1);
+    opacity: ${({expand}) => (expand ? "0.9" : "1")};
+    transform: ${({expand}) => (expand ? "scale(1.1)" : "scale(1)")};
   }
 `;
