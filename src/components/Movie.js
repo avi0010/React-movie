@@ -11,8 +11,8 @@ import useMovieFetch from "../hooks/useMovieFetch"
 const Movie = () => {
     const {movieId} = useParams();
     const {state:movie, loading, error} = useMovieFetch(movieId);
-    if (loading) return <Spinner/>;
-    if (error) return <div>Something Went Wrong.......</div>;
+    if (loading) return (<Spinner/>);
+    if (error) return (<div>Something Went Wrong.......</div>);
     return (
         <>
             <BreadCrumb movieTitle={movie.original_title}/>
@@ -20,5 +20,4 @@ const Movie = () => {
         </>
     )
 };
-
 export default Movie;

@@ -12,10 +12,10 @@ import SearchBar from "./SearchBar";
 import Button from "./Button";
 
 const Home = () => {
-    const {state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore} = useHomeFetch()
+    const {state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore} = useHomeFetch();
     if (error) {
         return (
-            <div>Something Went Wrong</div>
+            <div>Something is seriously wrong</div>
         );
     }
     return (
